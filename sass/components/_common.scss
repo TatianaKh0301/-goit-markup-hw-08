@@ -1,0 +1,52 @@
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+body {
+    font-family: $primary-font, Tahoma, sans-serif;
+    background-color: $primary-color;
+}
+
+a {
+    text-decoration: none;
+    font-style: normal;
+}
+
+.logo {
+    @include font($secondary-font, 700, 24px, 1.17, 0.03em);
+    @media screen and (min-width: 1200px) {
+        @include font($secondary-font, 700, 26px, 1.19, 0.03em);
+    }   
+    color: $accent-color;
+}
+
+.icon-soc-link {
+    width: 44px;
+    height: 44px;    
+    border-radius: 50%;
+    @extend %flex-ai-jc;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.no-scroll {
+    overflow: hidden;
+}

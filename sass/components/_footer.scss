@@ -1,0 +1,164 @@
+.footer {
+    background-color: $hero-footer-bgcolor;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .footer__logo {
+        display: block;
+        margin-bottom: 20px;    
+    }
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }    
+}
+
+.container__wrap-logo-soc {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: baseline;
+    }
+     @media screen and (min-width: 768px) and (max-width: 1199px) {
+        justify-content: space-between;
+        padding-left: 61px;
+        padding-right: 61px;
+        margin-bottom: 60px;
+    }
+}
+.logo__footer--color {
+    color: $primary-color;
+}
+
+.adress__item {
+    &:not(:last-child) {
+        margin-bottom: 8px;
+        @media screen and (min-width: 1200px) {
+        margin-bottom: 9px;
+        }
+    }
+}
+
+.adress__link {
+    @include font(null, null, 14px, 1.71, 0.03em);
+}
+
+.adress__link--adress-color {
+    color: $primary-color;
+}
+
+.adress__link--contact-color {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.container__footer {
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: baseline;
+        }
+}
+
+.adress-wrap {
+    @media screen and (min-width: 1200px) {
+        flex-grow: 1;
+    }    
+}
+
+.company-soc {          
+    @media screen and (max-width: 479px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media screen and (max-width: 767px) {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    } 
+    @media screen and (min-width: 1200px) {
+        margin-left: 70px;
+        margin-right: 93px;
+    }
+    .company-soc__text {
+        @include font($primary-font, 700, 14px, 1.14, 0.03em);
+        text-transform: uppercase;
+        color: $primary-color;
+        margin-bottom: 20px;
+    }
+    .company-soc__list {
+        display: flex;
+        justify-content: center;
+    }
+    .company-soc__item:not(:first-child) {
+        margin-left: 10px;
+    }
+    .company-soc__link {
+        background-color: rgba(255, 255, 255, 0.1);
+        fill: $primary-color;
+        transition:
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            background-color: $accent-color;
+        }
+    }
+}
+
+.mail__text {
+    @include font(null, 700, 14px, 1.14, 0.03em);
+    text-transform: uppercase;
+    color: $primary-color;
+    margin-bottom: 20px;
+}
+
+.form-send {
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
+    .form-send__input {
+        margin-bottom: 20px;
+        @media screen and (max-width: 449px) {
+           width: 100%; 
+        }
+        @media screen and (min-width: 450px) and (max-width: 1199px) {
+            width: 450px;
+        }
+            height: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        padding: 15px 16px;
+        background-color: transparent;
+        margin-right: 12px;
+        &::placeholder {
+            @include font(null, null, 16px, 1.25, 0.03em);
+            color: rgba(255, 255, 255, 0.6);
+        }
+        @media screen and (min-width: 1200px) {
+            width: 358px;
+        }
+    }
+}
+
+.form-send__btn--send {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    text-align: left;
+    padding-left: 29px;
+    width: 200px;
+    height: 50px;
+    background-color: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    @include font(null, 700, 16px, 1.88, 0.06em);
+    color: $primary-color;
+    border-color: transparent;
+    
+    @media screen and (max-width(1199px)) {
+        margin: 0 auto;
+    }
+    
+}
+
+.form-send__icon {
+    fill: $primary-color;
+    margin-left: 10px;
+}
