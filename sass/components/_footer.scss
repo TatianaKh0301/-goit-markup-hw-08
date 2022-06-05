@@ -12,15 +12,19 @@
 }
 
 .container__wrap-logo-soc {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px;
+    }
     @media screen and (min-width: 768px) {
         display: flex;
         align-items: baseline;
     }
      @media screen and (min-width: 768px) and (max-width: 1199px) {
-        justify-content: space-between;
-        padding-left: 61px;
-        padding-right: 61px;
+        justify-content: space-around;
         margin-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
     }
 }
 .logo__footer--color {
@@ -68,11 +72,9 @@
     }
     @media screen and (max-width: 767px) {
         margin-top: 60px;
-        margin-bottom: 60px;
     } 
     @media screen and (min-width: 1200px) {
-        margin-left: 70px;
-        margin-right: 93px;
+        margin-left: 70px;        
     }
     .company-soc__text {
         @include font($primary-font, 700, 14px, 1.14, 0.03em);
@@ -113,7 +115,7 @@
     .form-send__input {
         margin-bottom: 20px;
         @media screen and (max-width: 449px) {
-           width: 100%; 
+            width: 100%; 
         }
         @media screen and (min-width: 450px) and (max-width: 1199px) {
             width: 450px;

@@ -84,9 +84,9 @@ img {
   padding-right: 15px;
   margin: 0 auto;
 }
-@media screen and (max-width: 479px) {
+@media screen and (min-width: 480px) {
   .container {
-    width: 100%;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -183,8 +183,6 @@ img {
 
 .contacts {
   display: none;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 @media screen and (min-width: 768px) {
   .contacts {
@@ -202,6 +200,11 @@ img {
   margin-right: 50px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .contacts__item:not(:last-child) {
     margin-right: 50px;
@@ -237,7 +240,8 @@ img {
 }
 
 .contacts__link {
-  text-align: left;
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.17;
@@ -248,8 +252,6 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .contacts__link {
-    display: flex;
-    align-items: center;
     justify-content: center;
     font-weight: 500;
     font-size: 14px;
@@ -421,6 +423,11 @@ img {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .container__wrap-logo-soc {
+    margin-bottom: 60px;
+  }
+}
 @media screen and (min-width: 768px) {
   .container__wrap-logo-soc {
     display: flex;
@@ -429,10 +436,13 @@ img {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .container__wrap-logo-soc {
-    justify-content: space-between;
-    padding-left: 61px;
-    padding-right: 61px;
+    justify-content: space-around;
     margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container__wrap-logo-soc {
+    margin-right: 93px;
   }
 }
 
@@ -485,13 +495,11 @@ img {
 @media screen and (max-width: 767px) {
   .company-soc {
     margin-top: 60px;
-    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
   .company-soc {
     margin-left: 70px;
-    margin-right: 93px;
   }
 }
 .company-soc .company-soc__text {
@@ -629,6 +637,8 @@ img {
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bground/hero-bg-dt-1x.jpg");
   }
 }
@@ -992,6 +1002,8 @@ img {
     margin-left: 30px;
     width: calc(50% - 30px);
   }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio-list__item:not(:nth-last-child(-n+1)) {
     margin-bottom: 30px;
   }
